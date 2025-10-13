@@ -127,6 +127,11 @@ Tip: Authorization is about permissions.
 -----------------------------------------------------------------------------------
 ENDPOINT : 
 
+example : localhost:3000/products
+          localhost:3000/users
+
+/ke baad xyz and abc etc etc is API 
+
 an endpoint is basically a URL (or URI) where a client (like a browser or app) can send a request to a server to get or send data. Think of it as a specific “address” in a web app where certain actions happen.
 
 Here’s a clearer breakdown:
