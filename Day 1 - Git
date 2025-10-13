@@ -1,0 +1,54 @@
+Day 1 
+Vs code file changed 
+then its Stage 
+
+stage
+then commit
+
+branch + new branch code = new version
+
+JS 
+async
+await - 
+settimeout 
+event loop
+
+server start - node index.js
+source tab - have UI code
+
+
+node modules - all code comes from Express(or any other library)
+Public library , that's why no need of putting into github 
+
+npm init 
+npm install express
+
+index.js 
+
+add code 
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
+app.listen(3000, () => console.log('Server running on port 3000'));
+
+node index.js
+local server on 
+
+go to localhost:3000
+to kill server go to cmd , do ctrl + c
+
+schema of table
+ER diagram - DBMS 
+Actor - admin , user , 
+
+user - userid , username , productid , phoneno , emailId , address , 
+
+product - productid , productName , quantity , price , description , productType , url (image)
+
+Order - ordered , userid , productid , paymentDetails , 
+
+Image is 0 and 1 only 
