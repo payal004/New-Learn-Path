@@ -1,4 +1,162 @@
 Day 1 
+-------------
+CORS
+Tokens
+Cookies
+Authorization and authentication 
+Endpoint
+git 
+github
+----------------------
+TOKENS : 
+
+In web development, a token usually refers to a piece of data used for authentication, authorization, or session management—not the text-processing kind used in AI. Think of it as a “key” that proves who you are or grants access to certain resources.
+
+Here are the main types:
+
+1. Authentication Token
+
+Used to verify a user’s identity after login.
+
+Commonly implemented as JWT (JSON Web Token).
+
+Example flow:
+
+User logs in with username/password.
+
+Server verifies credentials.
+
+Server returns a token (like eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...).
+
+Client stores the token (usually in localStorage or a cookie).
+
+Client sends the token with requests to access protected resources.
+
+2. CSRF Token
+
+Prevents Cross-Site Request Forgery attacks.
+
+Ensures that a request coming to the server is from your legitimate website.
+
+Usually a random string included in forms or headers.
+
+3. API Token
+
+Used to authenticate requests to APIs.
+
+Think of it as a password for your app to use an API.
+
+Example: GitHub API requires a personal access token.
+
+4. Refresh Token
+
+Used along with JWTs to get a new access token without logging in again.
+
+Helps maintain long-lived sessions securely.
+
+✅ In short:
+A token in web dev is like a digital “pass” or “ticket” that proves identity, grants access, or protects requests.
+---------------------------------------------------------------------------------------------------------------------
+When you log in to a web app, cookies are small pieces of data that the website stores on your browser to remember information about you. They help the web app “recognize” you without asking you to log in every time.
+
+Here’s a breakdown:
+
+What cookies store during login:
+
+Your session ID or token, which proves that you’ve successfully logged in.
+
+Sometimes preferences or other small data related to your account.
+
+How they work:
+
+You enter your username and password → server verifies them → server sends a cookie to your browser.
+
+Your browser stores the cookie and sends it back to the server on every subsequent request.
+
+The server reads the cookie to know “this is user X,” so you stay logged in.
+
+Types of cookies related to login:
+
+Session cookies: Temporary, deleted when you close the browser.
+
+Persistent cookies: Stay on your device for a longer period, so you remain logged in even after closing the browser.
+
+Security aspect:
+
+Cookies can be secure (only sent over HTTPS) and HttpOnly (cannot be accessed by JavaScript) to prevent hacking.
+
+Sensitive apps use tokens (like JWT) stored in cookies instead of storing passwords directly.
+
+So, in short: cookies are your browser’s way of “remembering you” when you’re logged in.
+----------------------------------------
+1. Authentication (AuthN)
+
+Purpose: Verifies who you are.
+
+Question it answers: “Are you really the person you claim to be?”
+
+How it works: Usually through login credentials (username/password), OTPs, social login, or biometric verification.
+
+Example:
+
+You enter your email and password on a website.
+
+The server checks if they match the records.
+
+If yes → you are authenticated.
+
+Tip: Authentication is about identity.
+
+2. Authorization (AuthZ)
+
+Purpose: Determines what you can do.
+
+Question it answers: “What resources or actions are you allowed to access?”
+
+How it works: Server checks your permissions or roles to allow or deny access to certain resources.
+
+Example:
+
+You log in to a website (authenticated).
+
+You try to access the admin panel.
+
+If your account role is “admin,” you are authorized; if not → access denied.
+
+Tip: Authorization is about permissions.
+-----------------------------------------------------------------------------------
+ENDPOINT : 
+
+an endpoint is basically a URL (or URI) where a client (like a browser or app) can send a request to a server to get or send data. Think of it as a specific “address” in a web app where certain actions happen.
+
+Here’s a clearer breakdown:
+
+Role of an endpoint:
+
+It’s where the server listens for requests.
+
+Each endpoint usually corresponds to a specific action, like fetching user data, submitting a form, or updating a record.
+
+Example in a web app:
+Suppose you have a REST API for a blog:
+
+GET /posts → fetches all blog posts
+
+GET /posts/123 → fetches a single post with ID 123
+
+POST /posts → creates a new post
+
+DELETE /posts/123 → deletes the post with ID 123
+
+Each of these URLs (/posts, /posts/123) is an endpoint.
+
+Key points:
+
+Endpoints are often paired with HTTP methods like GET, POST, PUT, DELETE, which define the action.
+
+APIs are basically a collection of endpoints that clients can interact with.
+
+So, in short: an endpoint is a specific address on a server where your app can request or send data.
 Vs code file changed 
 then its Stage 
 
