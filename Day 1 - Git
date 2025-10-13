@@ -8,6 +8,8 @@ Endpoint
 git 
 github
 ----------------------
+JS se endpoints call - fetch 
+--------------------
 TOKENS : 
 
 In web development, a token usually refers to a piece of data used for authentication, authorization, or session management—not the text-processing kind used in AI. Think of it as a “key” that proves who you are or grants access to certain resources.
