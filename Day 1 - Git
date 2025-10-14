@@ -1,4 +1,4 @@
-Day 1 
+Day 1 & Day 2 
 -------------
 CORS
 Tokens
@@ -217,3 +217,32 @@ product - productid , productName , quantity , price , description , productType
 Order - ordered , userid , productid , paymentDetails , 
 
 Image is 0 and 1 only 
+----------------------------
+fix
+feature
+test
+git commit -m "feature:"
+git push (default branch , default main )
+
+origin - remote ka name 
+main - branch name 
+git push origin main 
+
+git pull  remote name branch name 
+
+git checkout -b feature-one 
+git checkout -b branchname
+
+create new branch on local
+main merge , pull request PR
+
+git status -> local status batata hai 
+GitHub wala repo and local mai difference 
+
+feat - feature
+git add
+git commit -m "refactored "
+
+git push 
+merge PR into main
+
