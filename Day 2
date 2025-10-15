@@ -1,1 +1,41 @@
+LLD 
+in detailed
+Schema design - class  , attribute , products 
+somewhat closed to coding , 
+
+HLD 
+overview
+functional requirement 
+example : Diagram of service , Cache
+which db to be used 
+compare diff technologies and come to point which one to implement in our service / app 
+
+non - functional requirement : 
+logs , availability , security - Learn from book 
+
+example : Question is design an image upload service ?
+Ans - ask first what will be the size of image , count of images to be upload , where to save the images 
+These comes under  
+-------------------
+Open ai platform 
+open documentation 
+API call 
+API KEY - create a new secret key and use it on our code 
+
+store api in API_KEYS.js file in our project 
+
+./ current folder 
+without ./
+
+API URL 
+api url have a particular key associated with it . 
+
+doc - create new secret key 
+dont deploy api key , so write on gitignore too 
+
+env variable ke Tarah use API_KEYS
+keys.env file 
+OPEN_AI - paste key 
+destructure
+
 
