@@ -39,4 +39,29 @@ OPEN_AI - paste key
 destructure
 
 API Integration 
+---------------------------------------------------------
+Git commands
+Questions on Web Technology
+API Integrations
+
+network -> applications 
+cookies - info about logged in as user 
+ex - device id , session id , user name 
+
+ GitHub.com -> DNS Server -> IP address 
+IP address goes to browser
+send req to GitHub server
+goes to dB and query 
+res to client 
+while responding it sends cookies 
+UI mai cookies set krne wale code written hota  hai 
+function h , usme user name we need , then we dont have to call the server baar baar 
+-----------------------------------------
+authenticate - logged into a server 
+example :  google photos , log in kregnge tabho dekh payenge 
+
+authorization - what are u allowed to do ? Not allowed to delete a photo , upload a new photo 
+
+----------------------------------------------API KEY - unique , long key or short key 
+Key store apne end mai 
 
