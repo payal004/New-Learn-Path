@@ -33,3 +33,28 @@ q5 search an element
 
 Pending ....
 q6 insert at end of DLL (yet to do ) 
+
+--------------------------------------------
+Anonymous function in JS :
+fn without a name 
+when fn is needed for short period of time 
+used as callback / argument inside another fn 
+assign to a var
+run immediately 
+
+ex 1:
+const greet = function(){console.log("hello")};
+function() -> anonymous fn
+called as greet()
+
+ex 2:
+setTimeOut(function(){console.log("Runs after 1sec "),1000};
+
+ex 3:
+---------------------------------------------------------------------------
+Destructuring in JS : 
+breaking / unpacking values from arr or objects into separate variables
+const nums [1,2,3];              // normal way 
+const a = nums[0];
+const [a,b,c] = nums;            // destructuring 
+const [a, , c] = nums ;          // u can even skip position by Leaving comma
