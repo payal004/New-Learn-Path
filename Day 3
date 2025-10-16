@@ -1,3 +1,28 @@
+Server.js explanation from Blushbox repo 
+
+1 import express lib
+2 load env var from .env file into process.env
+3 extract open_ai_key from env var
+4 creates express applicn instance called app
+5 import CORS middleware
+6 import path modules for dir / folders / files
+7 import sqlite3 module , .verbose() - logs to help debug DB issue 
+9 import function getListofProducts. 
+11 parsing JSON data in request
+12 enable CORS for all routes
+14 serve files in frontend folder as static assests 
+16 define PORT Number
+19 open or create sqlite3 DB File 
+20 21 22 Logs connection error or else show message 
+25 Creates Table 
+
+ROUTES 
+API routes for Backend - HTTP Endpoints
+58 
+59 Query , [] , callback
+60 Server Error return 500 
+61 return all Products rows 
+----------------------------------
 Linked List from TUF site :
 
 q1 create a LL 
