@@ -1,1 +1,23 @@
 Linked List TUF 
+------------------------------------------
+Q 9   middle element of LL
+O(n) TC 
+o(1) SC
+ListNode* middleNode(ListNode* head) {
+        ListNode* slow = head;
+        ListNode* fast = head;
+        while(fast!=NULL && fast->next!=NULL)
+        {
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+        return slow;
+    }
+------------------------------------------
+Q 10 Reverse linked list 
+Iterative Way
+3 ptr approach
+
+
+---------------------------------------
+Q 11 
