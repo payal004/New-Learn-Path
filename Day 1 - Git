@@ -249,3 +249,7 @@ git commit -m "refactored "
 git push 
 merge PR into main
 
+const {contains method name only } = require 
+here require means directing to that file but import only the method mentioned inside 
+curly braces
+
