@@ -232,7 +232,10 @@ git pull  remote name branch name
 
 git checkout -b feature-one 
 git checkout -b branchname
+this creates a new branch too 
 
+only change current branch then below command 
+git checkout branchname      // changes the branch to another brnach 
 create new branch on local
 main merge , pull request PR
 
@@ -240,7 +243,7 @@ git status -> local status batata hai
 GitHub wala repo and local mai difference 
 
 feat - feature
-git add
+git add .     // track the changes 
 git commit -m "refactored "
 
 git push 
