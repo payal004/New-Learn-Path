@@ -1,0 +1,88 @@
+Javascript important concept : 
+
+Variables 
+let a = 5 ;                // can be changed 
+const name = "Payal"  // cannot be changed 
+var c = "London"       // old way (avoid it)
+
+Fucntions
+
+1 Normal Function 
+function abc(){
+ console.log("hello");
+}
+abc();
+
+2 Anonymous Function
+fn without a name 
+used inside other func (pass as arg like route or event handler)
+used when we dont need to reuse the fn later 
+
+function(){
+ console.log("xyz");
+}
+
+()  =>{
+ console.log("hi");
+}
+// call nai hota
+// only pass
+
+cant standalone or call directly 
+hence assign to variable or use inside another function
+
+const a = function(){
+ console.log("xyz");
+}
+a();                      // works fine in JS
+
+anonymmous func used as callback
+Callback - a callback is just a fn as an arg to another function
+
+setTimeOut(function(){
+ console.log("Execute after 2 sec")
+},2000);
+
+
+
+app.get("/",function(req,res){res.send("Welcome")});
+// express is called , then app is returned 
+// endpoints /users /products
+
+Destructing
+it extract values from obj / array easily 
+
+const user ={name:"Payal",age:23,city:"Kolkata"};
+const
+
+Array Destructuring 
+const numbers =[10,20,30];
+const [a,b]=numbers;
+console.log(a);
+console.log(b);
+
+Arrow Functions
+shorter syntax for functions
+const add = (a,b) => a+b
+console.log(add(2,3));
+
+app.get("/user",(req,res) => {
+ res.send("User Route");
+});
+
+Promises 
+backend code need to wait for data like DB Queries or API's
+getuserData(){
+ 
+}
+
+Async / Await
+backend code need to wait for data like DB or API's
+async function fetchdata(){
+ try{}
+ catch(err){
+   console.error(err);
+ }
+}
+
+
