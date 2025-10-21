@@ -1,0 +1,94 @@
+Day 7 
+q1 implement Stack using array 
+LIFO 
+
+#include<bits/stdc++.h>
+usng namespace std;
+class stack {
+int size;
+int *arr;
+int top;
+Stack(){
+top = -1;
+size = 1000;
+arr=new int[size];
+}
+void push(int x)
+{
+ top++;
+ arr[top]=x;
+}
+int pop(){
+int x = arr[top];
+top--;
+return x;
+}
+int top(){ return arr[top]; )
+int size(){ return top+1;}
+int main()
+{
+Stack s;
+s.push(1);
+s.push(2);
+s.push(3);
+s.top();
+s.size();
+s.pop();
+return 0;
+}
+
+Implement stack using linkedList
+push , pop , size , isEmpty , peek / top 
+
+#include<iostream>
+using namespace std;
+struct stacknode
+{
+ int data;
+ stacknode *next;
+ int size;
+ stacknode(int d){
+  
+ }
+ void push(int x)
+ {
+  s
+ }
+};
+int main()
+{
+ stack s;
+ s.push(1);
+ s.pop();
+ s.size();
+ s.isEmpty();
+ s.peek();
+ return 0;
+}
+
+Check for Balance Parentheses 
+() [ {} () ]      valid 
+[ ()  /           not valid 
+#include...
+using namespace std;
+bool isvalid(string s)
+{
+ stack<char> st;
+ for(auto it:s)
+ {
+   if(it=='(' || it=='{' || it=='[') st.push(it);
+   else{
+     if(st.size()==0) return false;
+     char ch = st.top();
+     st.pop();
+     if(( it==')' and  ch=='(')  or (it==']' and ch == '[') or (it == '}' and ch == '{')) continue;
+     else return false;
+    }
+ }
+int main()
+{
+ string s = "()[{}()]";
+ if(isvalid(s)) cout <<"True"<<endl;
+ else cout<<"False"<<endl;
+}
+}
