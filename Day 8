@@ -1,0 +1,62 @@
+Apex Triggers
+
+Before 
+no extra DML 
+same object
+fire error 
+update / prepopulate fields
+
+After 
+DML needed
+related objects
+other conditions
+
+1 before insert 
+validate data , set default values , modify fields before saving to DB , Fire error 
+2 after insert 
+preform actions , like creating related records , send email
+3 before update 
+validate data , modify data , prevent changes
+4 after update
+trigger follow up logic , notifications , email , log changes , sync related data
+5 before delete
+prevent deletion (add error) , validation
+6 after delete
+clean up related things ,  cascade delete , log data
+7 after undelete
+recreate relationship , reconnect related records
+
+2
+auto create child record (contact) for every account
+List<Contact> contoCreate = new List<Contact>();
+for(Account acc:Trigger.new)
+{
+ Contact c = new Contact();
+ c.Name = acc.Name;
+ c.AccountId = acc.Id;
+ contoCreate.add(c); 
+}
+insert contoCreate;
+}
+
+3 before update
+for(Account acc:Trigger.new)
+ for(Account oldacc:Trigger.oldmap.get(acc.Id))
+   if(acc.Name!=oldacc.Name)
+     acc.addError('Account name cannot be changed');
+
+5 before delete
+5a active account cannot be deleted
+for(Account oldacc:Trigger.old)
+   if(oldacc.Active__c=='YES')
+       oldacc.addError('Active account cannot be deleted');
+
+5b prevent deletion if child record exits
+Parent = acc, Child = contact
+for(Account acc:Trigger.old)
+   Integer countChild = [Select COUNT() from Contact where AccountID IN:acc.Id];
+if(countChild > 0) acc.addError('Cannot delete account because it has contacts');
+
+
+
+delete - only old , oldmap
