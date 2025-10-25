@@ -1,0 +1,134 @@
+Before HTML language we had markup language
+Read.md - markup language  or for writing documents 
+but not interactive 
+no images 
+no videos can be embedded 
+New Language to write research paper , so HTML was born .
+HTML have only tags.
+Example : heading , paragraph , bold , colors etc 
+
+Q how to write to add .CSS into html ? 
+html class .
+html id #
+html tag : body{} or p{}
+
+Browser - purpose was to read research paper  read only 
+IP address then research paper 
+120.12.12.133/researchPaper1 
+
+HTML / CSS
+Later HTML / CSS / JS 
+
+once html was loaded , static it was 
+JAVA , c++ was already there and backend used to work .
+ 
+Then JS was invented , JS compiler was launched on Netscape browser.
+
+
+
+How Coding language works ?
+1 High level code
+2 Compiler - human readable to computer understandable code.
+3 Write compiler 
+
+Assembly language
+add ,sub , * , goto 
+
+initially JS was very slow 
+so many compiler was born 
+
+In 2008 , Google V8 engine - JS Engine 
+ford v8 engine - 8 spoke engine 
+V8 - fastest engine 
+Open Source
+chromium on GitHub - as open source code 
+
+MIT , summer intern , Frontend - JS , backend - JAVA
+Frontend mai browser v8 engine (js ka compiler) , JS se backend ka code
+v8 engine ka instruction to browser
+
+take v8 code , 
+node.js 
+
+TS And JS :
+
+JS :
+var a = 5
+undefined
+
+framework : react , express
+
+JS see whole program at once 
+var - undefined 
+function as whole function
+
+then run line by line 
+and assign values to variable and functions
+
+Functions are of 2 types :
+1) abc = {fucntion}
+2) 
+
+Excel - Earlier data was stored in spreadsheet
+Person1 to Person2 share the file 
+if 1 cell wrong , then tell everybody to correct the value .
+example 49 student same data , 1 student diff data 
+
+Disadvantages : ACID property
+- Consistency - > inconsistent data 
+- time waste 
+- same document mai changes done by 2 people . DB - Isolation 
+- Atomicity - all or nothing , bank transfer , crypto ledger , excel of Payal - 10 , then Ashu's excel +10
+- Durability -  data delete nai hona chiye 
+
+Record making of anything 
+DBMS 
+
+Keys 
+Query 
+CK , SK - definition 
+
+Normalization - breaking of table 
+user ka name , mom name , papa name , order , address , mail , price
+
+Select * from Account LIMIT 1 
+
+harddisk (round round CD rhta hai ) 
+C drive mai data rhta hai 
+
+1NF , 2NF , 3NF , 4NF , BCNF 
+processor 
+wires 
+harddisk 
+
+HDD 
+magnetic head
+1 charged +ve
+0 uncharged -ve
+
+SSD
+
+RAM
+green color
+lectrical charge
+
+processor
+
+harddisk se read slow
+Ram se read fast , recent things get stored , cache krte h data yaha
+
+RAM gets fitted in white wala area
+motherboard mai attached RAM ,processor 
+
+steel se HHD created 
+aluminium , SSD is light weight 
+
+global object of js 
+document - 
+
+in chrome 
+iframe - object 
+
+all tags are object
+runtime mai object hota h 
+inke classes are present on memory tb
