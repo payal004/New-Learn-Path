@@ -132,3 +132,26 @@ iframe - object
 all tags are object
 runtime mai object hota h 
 inke classes are present on memory tb
+---------------------------------------
+event - user click on button etc 
+fn - block of code {....}
+
+innerHTML - change HTML content 
+innerText
+
+document.getElementById("GIVE ID").innerText=''; 
+.innerHTML="";
+
+document.write(1+2);
+
+document.write if loaded after html , delete everything
+therefore , write inside <script> tag </script>
+
+window.alert(1+2);
+
+You cannot access output devices from JavaScript
+
+Literals - fixed value ex: "Payal" 5 
+Keywords - define action to be performed . ex: let var const
+
+JS - case sensitive
