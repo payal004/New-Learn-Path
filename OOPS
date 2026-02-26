@@ -1,1 +1,57 @@
-OOPS
+# OOPS by doodoo
+
+## What is OOPS ? 
+ - OOP in C++ was introduced to solve this problem by organizing code into
+  classes and objects, making programs easier to understand, reuse, and maintain.
+
+## Topics : 
+1. Classes and objects
+2. Encapsulation
+3. Polymorphism
+4. Abstraction
+5. Inheritence
+
+## Class : 
+A class is a blueprint of objects
+
+
+
+public Class Girl {
+    private int age;
+
+}
+
+class BankAccount {
+private:
+    int balance;  // hidden data
+
+public:
+    // constructor
+    BankAccount(int b) {
+        balance = b;
+    }
+
+    void deposit(int amount) {
+        balance += amount;
+    }
+
+    void withdraw(int amount) {
+        if (amount <= balance)
+            balance -= amount;
+    }
+
+    int getBalance() {
+        return balance;
+    }
+};
+
+int main() {
+    BankAccount acc(1000);
+
+    deposit -> acc.deposit(500);
+
+    acc.withdraw(200);
+
+    cout << acc.getBalance(); // 1300
+}
+
